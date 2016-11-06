@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.com.jaymi.resistance">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2ActCamara"
+            android:label="@string/title_activity_main2_act_camara"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2ActAyuda"
+            android:label="@string/title_activity_main2_act_ayuda"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2ActAjustes"
+            android:label="@string/title_activity_main2_act_ajustes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2ActCompartir"
+            android:label="@string/title_activity_main2_act_compartir"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2ActMas"
+            android:label="@string/title_activity_main2_act_mas"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
